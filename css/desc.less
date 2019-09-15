@@ -1,0 +1,130 @@
+.column {
+	/* .border;  */
+}
+
+.left_column {
+	width: 50%;
+} 
+
+.right_column {
+	width: 50%;
+} 
+
+.description-wrapper {
+	margin-bottom: 80px;
+ 	padding: 0 35px;
+
+
+	.description {
+		max-width: 1080px;
+		margin-left: auto;
+	    margin-right: auto;
+
+
+	    .description_item {
+	    	display: flex;
+	    	justify-content: space-between;
+	    	margin-bottom: 80px;
+	    	/* .border; */
+	   
+
+	    	.left_column {
+	    		
+	    		p {
+	    			font-size: 90px;
+	    			font-family: "Century Gothic";
+	    			font-style: italic;
+	    			line-height: 50px;
+	    			height: 50px;
+	    			display: inline;
+	    			vertical-align: top;
+	    		}
+
+	    		img {
+	    			width: 300px;
+	    			margin: 0 0 0 -55px;
+
+	    		}
+	    	}
+
+			article {
+				font-size: 30px;
+				font-family: "Century Gothic";
+				font-style: italic;
+				line-height: 1;
+			}
+
+	    }
+/* .my_desc{
+		    	    		.left_column {
+		    	    		p {
+		    					position: absolute;
+		    	    		} 
+	    	}
+	   	}  */
+	    
+	}
+
+}
+
+
+.grid {
+	display: grid;
+	grid-template-columns: 50px auto;
+	grid-template-rows: 50px auto;
+	width: ~"calc( 50% + 68px )";
+	
+	.grid_content{
+
+		article {
+			padding: 15px;
+
+		}
+	}
+
+
+	.padding {
+		border-left: 3px solid #e7a42b;
+		border: rotate(180deg);
+		text-align: center;
+		font-size: 30px;
+		font-family: 'Dancing Script', cursive;
+		font-style: italic;
+		line-height: 45px;
+		color: #fff;
+		transition: 0.4s;
+
+		&:hover {
+			background-color: #264de4; 
+			transition: 0.4s;
+		}
+	}
+
+	.margin {
+		border-bottom: 3px solid #e7a42b;
+		writing-mode: tb-rl;
+	    transform:rotate(180deg);
+	    text-align: center;
+		font-size: 30px;
+		font-family: 'Dancing Script', cursive;
+		font-style: italic;
+		line-height: 45px;
+		color: #fff;
+		transition: 0.4s;
+
+		&:hover {
+			background-color: #e44d26; ;
+			transition: 0.4s;
+		}
+	}
+
+	article {
+		padding: 10px;
+		border-top: 3px solid #e7a42b;
+		border-left: 3px solid #e7a42b;
+	}
+
+	.sep {
+			background-color: #e7a42b;
+	}
+}
