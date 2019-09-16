@@ -126,9 +126,9 @@ table {
 .header-wrapper {
   width: 100%;
   padding-top: 80px;
+  padding-bottom: 80px;
   background-image: url(img/background2.jpg);
   background-size: cover;
-  margin-bottom: 80px;
 }
 .header-wrapper .header {
   max-width: 1080px;
@@ -186,6 +186,7 @@ table {
 }
 .yakor {
   position: absolute;
+  opacity: 0;
 }
 .column {
   /* .border;  */
@@ -199,6 +200,7 @@ table {
 .description-wrapper {
   margin-bottom: 80px;
   padding: 0 35px;
+  margin-top: 50px;
 }
 .description-wrapper .description {
   max-width: 1080px;
@@ -310,6 +312,7 @@ table {
   height: 100%;
   max-width: 1080px;
   margin: 130px auto 0 auto;
+  padding-bottom: 50px;
 }
 .wishes-content .content_block {
   display: flex;
@@ -442,6 +445,7 @@ footer .main-img_wrapper {
 footer .main-img_wrapper img {
   max-width: 100%;
 }
+/*as wishes*/
 .portf-wrapper {
   width: 100%;
   text-align: center;
