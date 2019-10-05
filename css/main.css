@@ -181,12 +181,12 @@ table {
   border-right: 30px solid transparent;
   border-top: 50px solid #fff;
 }
+.header-wrapper .header .yakor {
+  position: absolute;
+  display: none !important;
+}
 .border {
   border: 1px solid  #000;
-}
-.yakor {
-  position: absolute;
-  opacity: 0;
 }
 .column {
   /* .border;  */
@@ -243,7 +243,7 @@ table {
   display: grid;
   grid-template-columns: 50px auto;
   grid-template-rows: 50px auto;
-  width: calc( 50% + 68px );
+  width: calc( 50% + 160px );
 }
 .grid .grid_content article {
   padding: 15px;
@@ -368,6 +368,13 @@ hr {
   margin-top: 80px;
   margin-bottom: 80px;
 }
+.contacts-wrapper .contacts .main-contacts a {
+  max-height: 80px;
+  max-width: auto;
+  margin: auto auto;
+  display: inline-block;
+  transition: 0.2s 0.5s;
+}
 .contacts-wrapper .contacts .main-contacts .contacts_block {
   display: flex;
   justify-content: space-between;
@@ -405,13 +412,6 @@ hr {
 .center {
   line-height: 90px;
   max-height: 90px;
-}
-a {
-  max-height: 80px;
-  max-width: auto;
-  margin: auto auto;
-  display: inline-block;
-  transition: 0.2s 0.5s;
 }
 footer {
   width: 100%;
