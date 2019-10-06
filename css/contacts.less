@@ -6,23 +6,25 @@
 		text-align: center;
 
 		.title {
-			font-size: 83px;
+			font-size: 80px;
 			font-family: "Century Gothic";
 			font-weight: bold;
-			height: 83px;
+			height: auto;
+			line-height: 80px;
 			display: inline-block;
-			/*margin-top: 80px;*/
+			margin-top: 80px;
 			color: #000;
 		}
 			
 		.main-contacts {
-			margin-top: 80px;
-			margin-bottom: 80px;
+			max-width: 700px;
+			padding: 0 15px;
+			margin: 80px auto;
 
 			a {
 				max-height: 80px;
 				max-width: auto;
-				margin: auto auto;
+				/*margin: auto auto;*/
 				display: inline-block;
 				transition: 0.2s 0.5s;
 			}
@@ -31,12 +33,12 @@
 				display: flex;
 				justify-content: space-between;
 				margin-bottom: 40px;
+				height: 90px;
 
 				img {
 					max-height: 80px;
-					max-width: auto;
-					margin: auto auto;
-					display: inline-block;
+					/*margin: auto auto;
+*/					display: inline-block;
 					transition: 0.2s 0.5s;
 
 					&:hover {
@@ -51,7 +53,7 @@
 					width: 50%;
 					text-align: left;
 					margin: auto 0;
-					height: 90px;
+					max-height: 90px;
 				}
 			}
 

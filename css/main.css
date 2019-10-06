@@ -102,6 +102,7 @@ section {
 }
 body {
   line-height: 1;
+  width: 100%;
 }
 ol,
 ul {
@@ -170,7 +171,7 @@ table {
 }
 .header-wrapper .header .logos img {
   max-height: 250px;
-  min-width: 190px;
+  max-width: 190px;
 }
 .header-wrapper .header a {
   display: block;
@@ -295,10 +296,11 @@ table {
 	background-repeat: no-repeat;*/
 }
 .title {
-  font-size: 250px;
+  font-size: 200px;
   font-family: "Century Gothic";
   font-weight: bold;
-  line-height: 250px;
+  /* 
+		line-height: 200px; */
   color: #fff;
   display: inline;
 }
@@ -311,7 +313,7 @@ table {
 .wishes-content {
   height: 100%;
   max-width: 1080px;
-  margin: 130px auto 0 auto;
+  margin: 100px auto 0 auto;
   padding-bottom: 50px;
 }
 .wishes-content .content_block {
@@ -356,22 +358,24 @@ hr {
   text-align: center;
 }
 .contacts-wrapper .contacts .title {
-  font-size: 83px;
+  font-size: 80px;
   font-family: "Century Gothic";
   font-weight: bold;
-  height: 83px;
+  height: auto;
+  line-height: 80px;
   display: inline-block;
-  /*margin-top: 80px;*/
+  margin-top: 80px;
   color: #000;
 }
 .contacts-wrapper .contacts .main-contacts {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  max-width: 700px;
+  padding: 0 15px;
+  margin: 80px auto;
 }
 .contacts-wrapper .contacts .main-contacts a {
   max-height: 80px;
   max-width: auto;
-  margin: auto auto;
+  /*margin: auto auto;*/
   display: inline-block;
   transition: 0.2s 0.5s;
 }
@@ -379,11 +383,12 @@ hr {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  height: 90px;
 }
 .contacts-wrapper .contacts .main-contacts .contacts_block img {
   max-height: 80px;
-  max-width: auto;
-  margin: auto auto;
+  /*margin: auto auto;
+*/
   display: inline-block;
   transition: 0.2s 0.5s;
 }
@@ -397,7 +402,7 @@ hr {
   width: 50%;
   text-align: left;
   margin: auto 0;
-  height: 90px;
+  max-height: 90px;
 }
 .italic {
   font-size: 30px;
@@ -414,20 +419,17 @@ hr {
   max-height: 90px;
 }
 footer {
-  width: 100%;
   background-image: url(img/secondBackground.jpg);
   background-size: cover;
   color: #fff;
   display: flex;
   justify-content: space-between;
+  padding: 0 35px;
 }
 footer .footer_text {
-  margin-left: 35px;
-  margin-right: 35px;
   margin-top: 75px;
   display: flex;
   flex-direction: column;
-  min-width: 256px;
 }
 footer .footer_text .footer_text-block {
   display: flex;
@@ -440,10 +442,13 @@ footer .footer_text .footer_text-block .yurasevVladislav {
   font-weight: 600;
 }
 footer .main-img_wrapper {
-  margin: auto auto;
+  position: absolute;
+  display: none;
 }
 footer .main-img_wrapper img {
-  max-width: 100%;
+  max-width: 1000px;
+  max-height: 375px;
+  margin: 0 auto;
 }
 /*as wishes*/
 .portf-wrapper {
@@ -507,8 +512,105 @@ footer .main-img_wrapper img {
   font-weight: normal;
   font-style: normal;
 }
-@media screen and (max-width: 600px) {
-  #header {
+@media screen and (max-width: 1050px) {
+  .header {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .header .title_item-1 {
+    font-family: "Rubik";
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 42px;
+    letter-spacing: 50px;
+    margin-top: 0;
+    margin-left: 50px;
+  }
+  .header img {
+    max-width: 150px !important;
+  }
+  .title {
+    font-size: 150px;
+    display: inline-block;
+    width: 100%;
+  }
+  .title .wishes_title {
+    margin-left: 20px;
+  }
+  .title .title_item {
     display: none;
+  }
+  .main-img_wrapper {
+    position: absolute;
+    max-height: 1024px;
+    max-width: 100%;
+    opacity: 0.1;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header img {
+    max-width: 120px !important;
+  }
+  .title_item-1 {
+    font-family: "Rubik";
+    font-size: 30px !important;
+    font-weight: 300;
+    line-height: 30px !important;
+    letter-spacing: 30px !important;
+    margin-top: 0;
+    margin-left: 30px !important;
+  }
+  .title_item-2 {
+    font-size: 50px !important;
+    line-height: 50px !important;
+    margin-bottom: 150px !important;
+  }
+  .title_item-3 {
+    font-size: 50px !important;
+    line-height: 50px !important;
+    margin-bottom: 50px !important;
+  }
+  .description_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .description_item .left_column {
+    margin-bottom: 10px !important;
+  }
+  .description_item .column {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .description_item .grid {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bold {
+    font-size: 50px !important;
+    font-family: "Century Gothic";
+    font-weight: bold;
+  }
+  .contacts .italic {
+    font-size: 25px !important;
+    font-family: "Century Gothic";
+    font-style: italic;
+  }
+  .contacts_block {
+    text-align: right;
+  }
+  .contacts_block .information {
+    /*width: 70% !important;*/
+  }
+  .footer_text .yurasevVladislav {
+    float: right;
+    font-size: 20px !important;
+    font-family: "Century Gothic";
+    font-weight: 600;
+  }
+  .footer_text .italic {
+    font-size: 15px !important;
+    font-family: "Century Gothic";
+    font-style: italic;
   }
 }

@@ -1,0 +1,66 @@
+.contacts-wrapper .contacts {
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contacts-wrapper .contacts .title {
+  font-size: 80px;
+  font-family: "Century Gothic";
+  font-weight: bold;
+  height: auto;
+  line-height: 80px;
+  display: inline-block;
+  margin-top: 80px;
+  color: #000;
+}
+.contacts-wrapper .contacts .main-contacts {
+  max-width: 700px;
+  padding: 0 15px;
+  margin: 80px auto;
+}
+.contacts-wrapper .contacts .main-contacts a {
+  max-height: 80px;
+  max-width: auto;
+  /*margin: auto auto;*/
+  display: inline-block;
+  transition: 0.2s 0.5s;
+}
+.contacts-wrapper .contacts .main-contacts .contacts_block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  height: 90px;
+}
+.contacts-wrapper .contacts .main-contacts .contacts_block img {
+  max-height: 80px;
+  /*margin: auto auto;
+*/
+  display: inline-block;
+  transition: 0.2s 0.5s;
+}
+.contacts-wrapper .contacts .main-contacts .contacts_block img:hover {
+  max-height: 90px;
+  max-width: auto;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.contacts-wrapper .contacts .main-contacts .contacts_block .information {
+  width: 50%;
+  text-align: left;
+  margin: auto 0;
+  max-height: 90px;
+}
+.italic {
+  font-size: 30px;
+  font-family: "Century Gothic";
+  font-style: italic;
+}
+.bold {
+  font-size: 70px;
+  font-family: "Century Gothic";
+  font-weight: bold;
+}
+.center {
+  line-height: 90px;
+  max-height: 90px;
+}

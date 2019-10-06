@@ -1,18 +1,15 @@
 footer {
-	width: 100%;
 	background-image: url(img/secondBackground.jpg);
 	background-size: cover;
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
+	padding: 0 35px;
 
 	.footer_text {
-		margin-left: 35px;
-		margin-right: 35px;
 		margin-top: 75px;
 		display: flex;
 		flex-direction: column;
-		min-width: 256px;
 
 		.footer_text-block {
 			display: flex;
@@ -28,11 +25,13 @@ footer {
 	}
 
 	.main-img_wrapper {
-
-		margin: auto auto;
+		position: absolute;
+		display: none;
 
 		img {
-			max-width: 100%;
+			max-width: 1000px;
+			max-height: 375px;
+			margin: 0 auto;
 		}
 	}
 }

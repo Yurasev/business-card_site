@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -52,7 +53,6 @@ table {
 @import "footer.less";
 @import "my-options.less";
 @import "portfolio.less";
-
 
 
 
@@ -89,8 +89,126 @@ font-style: normal;
 }
 
 
-@media screen and (max-width: 600px) {
-	#header {
-		display: none;
+
+
+@media screen and (max-width: 1050px) {
+	.header {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+
+		.title_item-1 {
+				font-family: "Rubik";
+				font-size: 42px;
+				font-weight: 300;
+				line-height: 42px;
+				letter-spacing: 50px;
+				margin-top: 0;
+				margin-left: 50px;
+
+			}
+
+			img {
+				max-width: 150px !important;
+			}
+		
+	}
+		.title {
+			font-size: 150px;
+			display: inline-block;
+			width: 100%;
+
+		.wishes_title {
+			margin-left: 20px;
+		}
+
+		.title_item {
+			display: none;
+		}
+		
+	}
+	.main-img_wrapper {
+		position: absolute;
+		max-height: 1024px;
+		max-width: 100%;
+		opacity: 0.1;
 	}
 }
+
+@media screen and (max-width: 900px) {
+
+	.header img {
+		max-width: 120px !important;
+	}
+
+	.title_item-1 {
+		font-family: "Rubik";
+		font-size: 30px !important;
+		font-weight: 300;
+		line-height: 30px !important;
+		letter-spacing: 30px !important;
+		margin-top: 0;
+		margin-left: 30px !important;
+	}
+	.title_item-2 {
+		font-size: 50px !important;
+		line-height: 50px !important;
+		margin-bottom: 150px !important;
+		}
+	.title_item-3 {
+				font-size: 50px !important;
+				line-height: 50px !important;
+				margin-bottom: 50px !important;
+			}
+
+	.description_item {
+		display: flex;
+	    flex-direction: column;
+	   	margin-bottom: 80px;
+
+	   	.left_column {
+	   		margin-bottom: 10px !important;
+	   	}
+
+	   	.column {
+	   		width: 100%;
+	   		margin: 0 auto;
+
+	   	}
+	   	.grid {
+	   			width: 100%;
+	   			margin: 0 auto;
+	   		}
+	}
+
+	.bold {
+		font-size: 50px !important;
+  		font-family: "Century Gothic";
+  		font-weight: bold;
+	}
+
+	.contacts .italic {
+		font-size: 25px !important;
+		font-family: "Century Gothic";
+		font-style: italic;
+	}
+	.contacts_block {
+		text-align: right;
+		.information {
+			/*width: 70% !important;*/
+		}
+	}
+	.footer_text {
+		.yurasevVladislav {
+			float: right;
+			font-size: 20px !important;
+			font-family: "Century Gothic";
+			font-weight: 600;
+		}
+	.italic {
+		font-size: 15px !important;
+		font-family: "Century Gothic";
+		font-style: italic;
+	}
+}
+}
+
