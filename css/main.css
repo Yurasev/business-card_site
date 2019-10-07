@@ -182,10 +182,6 @@ table {
   border-right: 30px solid transparent;
   border-top: 50px solid #fff;
 }
-.header-wrapper .header .yakor {
-  position: absolute;
-  display: none !important;
-}
 .border {
   border: 1px solid  #000;
 }
@@ -299,8 +295,7 @@ table {
   font-size: 200px;
   font-family: "Century Gothic";
   font-weight: bold;
-  /* 
-		line-height: 200px; */
+  line-height: 200px;
   color: #fff;
   display: inline;
 }
@@ -313,8 +308,8 @@ table {
 .wishes-content {
   height: 100%;
   max-width: 1080px;
-  margin: 100px auto 0 auto;
-  padding-bottom: 50px;
+  margin: 50px auto 0 auto;
+  padding-bottom: 20px;
 }
 .wishes-content .content_block {
   display: flex;
@@ -578,6 +573,9 @@ footer .main-img_wrapper img {
   .description_item .left_column {
     margin-bottom: 10px !important;
   }
+  .description_item .left_column img {
+    margin: 0 auto !important;
+  }
   .description_item .column {
     width: 100%;
     margin: 0 auto;
@@ -591,8 +589,8 @@ footer .main-img_wrapper img {
     font-family: "Century Gothic";
     font-weight: bold;
   }
-  .contacts .italic {
-    font-size: 25px !important;
+  .italic {
+    font-size: 15px !important;
     font-family: "Century Gothic";
     font-style: italic;
   }
@@ -604,7 +602,7 @@ footer .main-img_wrapper img {
   }
   .footer_text .yurasevVladislav {
     float: right;
-    font-size: 20px !important;
+    font-size: 15px !important;
     font-family: "Century Gothic";
     font-weight: 600;
   }
@@ -612,5 +610,150 @@ footer .main-img_wrapper img {
     font-size: 15px !important;
     font-family: "Century Gothic";
     font-style: italic;
+  }
+  hr {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header-wrapper {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(img/background2.jpg);
+    background-size: cover;
+  }
+  .title_item-2 {
+    font-size: 79px;
+    line-height: 79px;
+    margin-bottom: 100px !important;
+  }
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px !important;
+  }
+  .logos img {
+    max-height: 100px !important;
+    max-width: auto !important;
+  }
+  .description-wrapper {
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  .description-wrapper article {
+    font-size: 17px !important;
+    font-family: "Century Gothic";
+    font-style: italic;
+    line-height: 1;
+  }
+  .description-wrapper .grid {
+    display: grid;
+    grid-template-columns: 25px auto;
+    grid-template-rows: 25px auto;
+    width: 80%;
+    margin: 0;
+  }
+  .description-wrapper .grid .grid_content article {
+    padding: 10px;
+  }
+  .description-wrapper .padding {
+    border-left: 3px solid #e7a42b;
+    border: rotate(180deg);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    line-height: 20px;
+    color: #fff;
+    transition: 0.4s;
+  }
+  .description-wrapper .padding:hover {
+    background-color: #264de4;
+    transition: 0.4s;
+  }
+  .description-wrapper .margin {
+    border-bottom: 3px solid #e7a42b;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    line-height: 20px;
+    color: #fff;
+    transition: 0.4s;
+  }
+  .description-wrapper .margin:hover {
+    background-color: #e44d26;
+    transition: 0.4s;
+  }
+  .description-wrapper .column {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .description-wrapper .column img {
+    margin: 0 auto !important;
+  }
+  .wishes-content {
+    margin: 50px auto 0 auto !important;
+  }
+  .wishes-content .content_block img {
+    margin: 0 auto;
+    max-height: 50px;
+    max-width: auto;
+  }
+  .wishes-content .content_block article {
+    font-size: 20px;
+    font-family: "Century Gothic";
+    font-style: italic;
+    line-height: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff;
+    width: 75%;
+  }
+  .title-with-problem {
+    font-size: 80px !important;
+  }
+  .contacts .title {
+    font-size: 50px !important;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    height: auto;
+    line-height: 50px !important;
+    display: inline-block;
+    margin-top: 50px !important;
+    color: #000;
+  }
+  .contacts .main-contacts {
+    max-width: 700px;
+    padding: 0 15px;
+    margin: 30px auto !important;
+  }
+  .contacts .main-contacts .contacts_block a {
+    margin: auto;
+  }
+  .contacts .main-contacts .contacts_block img {
+    max-height: 50px !important;
+    margin: auto;
+  }
+  .contacts .main-contacts .contacts_block .information {
+    width: 70% !important;
+  }
+  .contacts_block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    height: auto !important;
+  }
+  .bold {
+    font-size: 25px !important;
+  }
+  .italic {
+    font-size: 15px !important;
+  }
+  .yurasevVladislav {
+    font-size: 15px !important;
   }
 }
