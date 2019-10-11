@@ -295,7 +295,7 @@ table {
   font-size: 200px;
   font-family: "Century Gothic";
   font-weight: bold;
-  line-height: 200px;
+  line-height: 150px;
   color: #fff;
   display: inline;
 }
@@ -308,8 +308,8 @@ table {
 .wishes-content {
   height: 100%;
   max-width: 1080px;
-  margin: 50px auto 0 auto;
-  padding-bottom: 20px;
+  margin: 100px auto 0 auto;
+  padding-bottom: 50px;
 }
 .wishes-content .content_block {
   display: flex;
@@ -528,6 +528,7 @@ footer .main-img_wrapper img {
     font-size: 150px;
     display: inline-block;
     width: 100%;
+    line-height: 80px;
   }
   .title .wishes_title {
     margin-left: 20px;
@@ -785,9 +786,11 @@ footer .main-img_wrapper img {
   }
   .title .hochuha {
     font-size: 120px !important;
+    line-height: 80px !important;
   }
   .title-with-problem {
     font-size: 80px !important;
+    line-height: 80px !important;
   }
   .contacts .title {
     font-size: 50px !important;
